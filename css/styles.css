@@ -163,16 +163,19 @@
     }
     .person .text {
         font-size: 20px;
+        margin: 5%;
     }
     .skills-education,
     .about-me {
+        margin: 5%;
         max-width: 900px;
     }
     .person .header {
         max-width: 600px;
     }
-    .skills-education .skills {
-        font-size: 20px;
+    .skills-education .skills,
+    .skills-education .education {
+        font-size: 14px;
     }
     .about-me .card .card-info {
         font-size: 25px;
