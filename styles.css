@@ -1,0 +1,303 @@
+.background-top {
+    width: 100%;
+    display: flex;
+    background: black;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.background-top p {
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: white;
+    font-size: 80px;
+    margin-left: 80%;
+}
+
+.background-down {
+    position: relative;
+    width: 100%;
+    background: black;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-photo {
+    display: flex;
+    height: 300px;
+    left: 0%;
+    margin-top: -150px;
+    margin-left: 5%;
+    position: relative;
+}
+
+.frame {
+    outline: 2px solid #000;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    left: 20%;
+    margin-top: -200px;
+    margin-left: 4.9%;
+}
+
+.main-photo img {
+    width: 300px;
+    height: 350px;
+    display: block;
+    margin: 25px;
+}
+
+.short-info {
+    height: 200px;
+    position: relative;
+    margin-top: -200px;
+    margin-left: 600px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.skills-education,
+.about-me {
+    flex: 1;
+    max-width: 1000px;
+    margin: 2%;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.short-info h2 {
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.short-info h3 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.short-info p {
+    font-size: 15px;
+}
+
+.about-me table tr td a {
+    text-decoration: none;
+    color: rgb(22, 61, 92);
+}
+
+.about-me p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.about-me .card {
+    max-width: 800px;
+    margin: 10px;
+    outline: 7px solid #000;
+}
+
+.about-me .card .card-info li {
+    list-style-type: none;
+    padding-left: 34px;
+    padding-right: 24px;
+}
+
+.about-me .card-info {
+    padding: 30px;
+    background-color: #edeef0;
+}
+
+.about-me .languages {
+    margin-left: 5%;
+    font-size: 17px;
+}
+
+.about-me .table-head {
+    margin-left: 5%;
+}
+
+.skills-education .skills ul {
+    text-align: justify;
+    list-style-position: outside;
+    columns: 2;
+}
+
+.person {
+    width: 100%;
+    margin: 10px;
+    position: relative;
+}
+
+.header {
+    font-family: 'DejaVu Sans Mono', monospace;
+    margin-left: 5%;
+    margin-right: 10px;
+    max-width: 450px;
+}
+
+.header h2 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.person .text {
+    font-family: 'DejaVu Sans Mono', monospace;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.two-blocks {
+    position: relative;
+    display: flex;
+}
+
+.projects {
+    font-family: 'DejaVu Sans Mono', monospace;
+    margin: 60px;
+    margin-top: 30px;
+    max-width: 200px;
+}
+
+.projects .project-holder {
+    display: inline-flex;
+}
+
+.c-projects,
+.java-projects,
+.angular-projects,
+.ruby-projects {
+    margin: 30px;
+    margin-left: 7%;
+}
+
+.projects .project-holder .image {
+    width: 150px;
+    height: 150px;
+}
+
+.projects .project-holder h2 {
+    text-align: center;
+}
+
+.projects .project-holder hr {
+    size: 7px;
+    border-style: inset;
+    height: 3px
+}
+
+.projects .project-holder img {
+    width: 130px;
+}
+
+.description {
+    margin-top: 90px;
+    text-align: center;
+}
+
+a.button {
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: black;
+    padding: .7em 1.5em;
+    outline: none;
+}
+
+a.button:hover {
+    background: rgb(36, 34, 34);
+}
+
+a.button:active {
+    background: rgb(26, 23, 23);
+}
+
+@media all and (max-width: 1000px) {
+    .two-blocks {
+        flex-flow: column;
+        align-items: stretch;
+    }
+    .header h2 {
+        font-size: 20px;
+    }
+    .person .text {
+        font-size: 20px;
+        margin: 5%;
+    }
+    .skills-education,
+    .about-me {
+        margin: 5%;
+        max-width: 900px;
+    }
+    .header {
+        max-width: 600px;
+    }
+    .skills-education .skills,
+    .skills-education .education {
+        font-size: 14px;
+    }
+    .about-me .card .card-info {
+        font-size: 25px;
+    }
+    .short-info {
+        margin-left: 400px;
+    }
+    .short-info p {
+        font-size: 20px;
+    }
+    .projects .project-holder .image {
+        width: 120px;
+        height: 120px;
+    }
+    .projects .project-holder .img {
+        width: 80px;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .two-blocks,
+    .project-holder {
+        align-items: center;
+        flex-flow: column;
+        width: 100vh;
+    }
+    .projects {
+        margin: 20px;
+    }
+    .c-projects,
+    .java-projects,
+    .angular-projects,
+    .ruby-projects {
+        margin-bottom: 100px;
+    }
+    .about-me .card .card-info {
+        font-size: 12px;
+    }
+    .person .header h2 {
+        font-size: 15px;
+    }
+    .short-info {
+        margin-left: 300px;
+        margin-top: -120px;
+    }
+    .short-info h1 {
+        font-size: 30px;
+    }
+    .short-info h2 {
+        font-size: 20px;
+    }
+    .main-photo {
+        margin-top: -150px;
+        height: 250px;
+        margin-bottom: 50px;
+    }
+    .main-photo img {
+        width: 200px;
+        height: 250px;
+    }
+    .frame {
+        height: 200px;
+        width: 200px;
+    }
+}
