@@ -127,14 +127,14 @@
     position: relative;
 }
 
-.person .header {
+.header {
     font-family: 'DejaVu Sans Mono', monospace;
     margin-left: 5%;
     margin-right: 10px;
     max-width: 450px;
 }
 
-.person .header h2 {
+.header h2 {
     background-color: black;
     color: white;
     padding: 5px;
@@ -153,12 +153,72 @@
     display: flex;
 }
 
+.projects {
+    font-family: 'DejaVu Sans Mono', monospace;
+    margin: 60px;
+    margin-top: 30px;
+    max-width: 200px;
+}
+
+.projects .project-holder {
+    display: inline-flex;
+}
+
+.c-projects,
+.java-projects,
+.angular-projects,
+.ruby-projects {
+    margin: 30px;
+    margin-left: 7%;
+}
+
+.projects .project-holder .image {
+    width: 150px;
+    height: 150px;
+}
+
+.projects .project-holder h2 {
+    text-align: center;
+}
+
+.projects .project-holder hr {
+    size: 7px;
+    border-style: inset;
+    height: 3px
+}
+
+.projects .project-holder img {
+    width: 130px;
+}
+
+.description {
+    margin-top: 90px;
+    text-align: center;
+}
+
+a.button {
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: black;
+    padding: .7em 1.5em;
+    outline: none;
+}
+
+a.button:hover {
+    background: rgb(36, 34, 34);
+}
+
+a.button:active {
+    background: rgb(26, 23, 23);
+}
+
 @media all and (max-width: 1000px) {
     .two-blocks {
         flex-flow: column;
         align-items: stretch;
     }
-    .person .header h2 {
+    .header h2 {
         font-size: 20px;
     }
     .person .text {
@@ -170,7 +230,7 @@
         margin: 5%;
         max-width: 900px;
     }
-    .person .header {
+    .header {
         max-width: 600px;
     }
     .skills-education .skills,
@@ -186,11 +246,30 @@
     .short-info p {
         font-size: 20px;
     }
+    .projects .project-holder .image {
+        width: 120px;
+        height: 120px;
+    }
+    .projects .project-holder .img {
+        width: 80px;
+    }
 }
 
 @media all and (max-width: 840px) {
-    .two-blocks {
+    .two-blocks,
+    .project-holder {
+        align-items: center;
         flex-flow: column;
+        width: 100vh;
+    }
+    .projects {
+        margin: 20px;
+    }
+    .c-projects,
+    .java-projects,
+    .angular-projects,
+    .ruby-projects {
+        margin-bottom: 100px;
     }
     .about-me .card .card-info {
         font-size: 12px;
