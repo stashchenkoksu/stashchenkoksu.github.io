@@ -167,7 +167,8 @@
 .c-projects,
 .java-projects,
 .angular-projects,
-.ruby-projects {
+.ruby-projects,
+.html-projects {
     margin: 30px;
     margin-left: 7%;
 }
@@ -268,7 +269,8 @@ a.button:active {
     .c-projects,
     .java-projects,
     .angular-projects,
-    .ruby-projects {
+    .ruby-projects,
+    .html-projects {
         margin-bottom: 100px;
     }
     .about-me .card .card-info {
